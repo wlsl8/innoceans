@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(연습)이노션에스</title>
+    <link rel="stylesheet" href="css/01.css">
+    <script>
+        window.onlosd=()=>{
+            document.querySelector('.nav_btn').addEventListener(click, ()=>{
+                document.querySelector('.nav_mobile').classList.add('active');
+            });
+            document.querySelector('.close_btn').addEventListener(click, ()=>{
+                document.querySelector('.nav_mobile').classList.remove('active');
+            });
+        };//end
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#">
+                    <img src="img/logo.svg" alt="">
+                </a>
+            </h1><!-- logo end -->
+            <nav class="nav_pc pc">
+                <ul class="gnb">
+                    <li>
+                        <a href="#">ABOUTS</a>
+                    </li>
+                    <li>
+                        <a href="#">WORKS</a>
+                    </li>
+                    <li>
+                        <a href="#">SOLUTIONS</a>
+                    </li>
+                    <li>
+                        <a href="#">INSIGHTS</a>
+                    </li>
+                    <li>
+                        <a href="#">CAREERS</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACTS</a>
+                    </li>
+                </ul>
+            </nav><!-- nav_pc end -->
+
+            <ul class="lang pc">
+                <li><a href="#">KOR</a></li>
+                <li><a href="#">ENG</a></li>
+            </ul><!-- lang end -->
+
+
+            <button class="nav_btn mobile">
+                <img src="img/btn_menu.svg" alt="메뉴보기">
+            </button><!-- nav_btn end -->
+
+            <nav class="nav_mobile mobile">
+                <button class="close_btn">
+                    <img src="img/close.svg" alt="메뉴닫기">
+                </button><!-- close_btn end -->
+
+            <nav class="nav_mobile mobile">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">ABOUTS</a>
+                        </li>
+                        <li>
+                            <a href="#">WORKS</a>
+                        </li>
+                        <li>
+                            <a href="#">SOLUTIONS</a>
+                        </li>
+                        <li>
+                            <a href="#">INSIGHTS</a>
+                        </li>
+                        <li>
+                            <a href="#">CAREERS</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACTS</a>
+                        </li>
+                    </ul>
+                    <ul class="lang">
+                        <li><a href="#">KOR</a></li>
+                        <li><a href="#">ENG</a></li>
+                    </ul><!-- lang end -->
+                </nav><!-- nav_mobile end -->
+        </div><!-- inner end -->
+    </header><!-- header end -->
+
+    <main class="main">
+        <section class="main_visual">
+            <img src="img/이미지.png" alt="We are innovative Solutionists">
+        </section><!-- main_visual end -->
+    </main><!-- main end -->
+</body>
+
+</html>

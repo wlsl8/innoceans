@@ -1,0 +1,131 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* font-family: "Inter", sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+button{
+    border: 0;
+    background-color: transparent;
+}
+.mobile{
+    display: none;
+}
+.header{
+    width: 100%;
+    height: 87.84px;
+    padding: 0 39.96px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header .inner{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .inner .logo{
+    width: 173.88px;
+}
+.header .inner .logo a{
+    display: block;
+    width: 100%;
+}
+.header .inner .logo a img{
+    width: 100%;
+}
+.header .inner .nav_pc .gnb{
+    display: flex;
+    gap: 5px;
+}
+.header .inner .nav_pc .gnb li a{
+    display: block;
+    padding: 5.94px 11px;
+    font-size: 15.84px;
+}
+.header .inner .lang{
+    display: flex;
+    gap: 15.84px;
+}
+.header .inner .lang li{
+    font-size: 14.04px;
+}
+.header .inner .lang li:nth-child(2){
+    color: #9f9fa1;
+}
+.main_visual{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_visual img{
+    width: 757.984px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .pc, .header .inner .lang.pc {display: none;}
+    .mobile{display: block;}
+    .header{
+        width: 72px;
+        padding: 0 24px;
+    }
+    .header .inner .logo{
+        width: 148px;
+    }
+    .header .inner .nav_mobile{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        right: -100%;
+        top: 0px;
+        background-color: #000;
+        padding: 155px 32px 24px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        text-align: right;
+    }
+     .header .inner .nav_mobile .gnb{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+     }
+    .header .inner .nav_mobile .close_btn{
+        position: absolute;
+        top: 14px;
+        right: 24px;
+    }
+    .header .inner .nav_mobile .gnb{
+        display: block;
+    }
+    .header .inner .nav_mobile .gnb .li{
+        font-size: 55;
+        font-weight: 700px;
+    }
+    .header .inner .nav_mobile .gnb li a{
+        display: block;
+        padding: 6px 8px;
+    }
+}
